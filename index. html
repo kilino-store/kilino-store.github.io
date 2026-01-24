@@ -54,7 +54,7 @@
   <div class="products">
 
     <div class="card">
-      <img src="file_hat_here" alt="Hemp Hat">
+      <img src=" IMG-20260122-WA0009.jpg alt="Hemp Hat">
       <h3>Hemp Hat</h3>
       <p>€15 – Stylish, lightweight, eco-friendly</p>
       <button onclick="window.open('https://wa.me/393792579444?text=Hi,+I+want+to+order+Hemp+Hat+from+Kilino','_blank')">Order on WhatsApp</button>
