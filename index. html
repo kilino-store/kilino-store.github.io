@@ -59,13 +59,16 @@
       <p>€15 – Stylish, lightweight, eco-friendly</p>
       <button onclick="window.open('https://wa.me/393792579444?text=Hi,+I+want+to+order+Hemp+Hat+from+Kilino','_blank')">Order on WhatsApp</button>
     </div>
-
+<!--
     <div class="card">
       <img src="file_bag_here" alt="Hemp Bag">
       <h3>Hemp Bag</h3>
       <p>€25 – Durable and sustainable</p>
-      <button onclick="window.open('https://wa.me/393792579444?text=Hi,+I+want+to+order+Hemp+Bag+from+Kilino','_blank')">Order on WhatsApp</button>
+      <but<!--
+onclick="window.open('https://wa.me/393792579444?text=Hi,+I+want+to+order+Hemp+Bag+from+Kilino','_blank')">Order on WhatsApp</button>
     </div>
+-->
+<!--
 
     <div class="card">
       <img src="file_wallet_here" alt="Hemp Wallet">
@@ -73,6 +76,8 @@
       <p>€12 – Compact and natural material</p>
       <button onclick="window.open('https://wa.me/393792579444?text=Hi,+I+want+to+order+Hemp+Wallet+from+Kilino','_blank')">Order on WhatsApp</button>
     </div>
+-->
+<!--
 
     <div class="card">
       <img src="file_moneybelt_here" alt="Money Belt Bag">
@@ -80,6 +85,8 @@
       <p>€18 – Safe, wearable, eco-friendly</p>
       <button onclick="window.open('https://wa.me/393792579444?text=Hi,+I+want+to+order+Money+Belt+Bag+from+Kilino','_blank')">Order on WhatsApp</button>
     </div>
+-->
+<!--
 
     <div class="card">
       <img src="file_belt_here" alt="Hemp Belt">
@@ -87,13 +94,15 @@
       <p>€12 – Strong, natural hemp</p>
       <button onclick="window.open('https://wa.me/393792579444?text=Hi,+I+want+to+order+Hemp+Belt+from+Kilino','_blank')">Order on WhatsApp</button>
     </div>
-
+-->
+<!--
     <div class="card">
       <img src="file_beachbag_here" alt="Beach Bag">
       <h3>Beach Bag</h3>
       <p>€20 – Perfect for trips, eco-conscious</p>
       <button onclick="window.open('https://wa.me/393792579444?text=Hi,+I+want+to+order+Beach+Bag+from+Kilino','_blank')">Order on WhatsApp</button>
     </div>
+-->
 
   </div>
 </section>
