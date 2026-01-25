@@ -1,91 +1,177 @@
-            width: 100%;
-            border-radius: 10px;
-            transition: transform 0.3s;
-        }
-        .product img:hover {
-            transform: scale(1.05);
-        }
-        .whatsapp {
-            text-align: center;
-            margin: 20px;
-        }
-        .whatsapp a {
-            background-color: #25D366;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        /* Scrollable customers section */
-        .customers-scroll {
-            display: flex;
-            overflow-x: auto;
-            gap: 10px;
-            padding: 10px;
-        }
-        .customers-scroll::-webkit-scrollbar {
-            height: 8px;
-        }
-        .customers-scroll::-webkit-scrollbar-thumb {
-            background-color: #ccc;
-            border-radius: 4px;
-        }
-    </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kilino Store | Handmade Eco Hats</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      color: #333;
+    }
+
+    header {
+      background: #ff9800;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header img {
+      max-width: 140px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    header h1 {
+      margin: 5px 0;
+      color: #fff;
+    }
+
+    header p {
+      margin: 0;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    /* PRODUCTS */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 15px;
+    }
+
+    .product {
+      background: #fff;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .price {
+      margin-top: 8px;
+      font-weight: bold;
+      color: #ff9800;
+      font-size: 14px;
+    }
+
+    /* CUSTOMERS */
+    .customers {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+    }
+
+    .customers img {
+      height: 200px;
+      border-radius: 10px;
+      flex-shrink: 0;
+    }
+
+    /* WHATSAPP */
+    .whatsapp {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .whatsapp a {
+      background: #25D366;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        <img src="IMG-20260122-WA0011.jpg" alt="Kilino Store Logo">
-        <h1>Kilino Store</h1>
-        <p>Handmade Eco-Friendly Hats</p>
-    </header>
 
-    <nav>
-        <a href="#products">Products</a>
-        <a href="#customers">Happy Customers</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<header>
+  <img src="logo.png" alt="Kilino Store Logo">
+  <h1>Kilino Store</h1>
+  <p>Handmade • Eco-Friendly • Ethical Hats</p>
+</header>
 
-    <section class="hero">
-        <img src="IMG-20260122-WA0011.jpg" alt="Featured Hat">
-        <h2>Summer Collection Hats</h2>
-        <p>Eco-friendly, handmade, and stylish. Perfect for every sunny day!</p>
-    </section>
+<section>
+  <h2>Our Hats</h2>
+  <div class="products">
 
-    <section id="products" class="products">
-        <!-- All Hat Images -->
-        <div class="product"><img src="IMG-20260122-WA0014.jpg" alt="Hat"><h3>Hat</h3></div>
-        <div class="product"><img src="IMG_20240711_160116_714.jpg" alt="Hat"><h3>Hat</h3></div>
-        <div class="product"><img src="IMG_20240711_160204_212.jpg" alt="Hat"><h3>Hat</h3></div>
-        <div class="product"><img src="IMG_20240711_160712_571.jpg" alt="Hat"><h3>Hat</h3></div>
-        <div class="product"><img src="IMG_20240711_160712_592.jpg" alt="Hat"><h3>Hat</h3></div>
-        <div class="product"><img src="IMG_20240711_160712_622.jpg" alt="Hat"><h3>Hat</h3></div>
-        <div class="product"><img src="IMG_20240711_160712_647.jpg" alt="Hat"><h3>Hat</h3></div>
-        <div class="product"><img src="IMG_20240711_160712_690.jpg" alt="Hat"><h3>Hat</h3></div>
-        <div class="product"><img src="IMG_20240711_160712_747.jpg" alt="Hat"><h3>Hat</h3></div>
-        <div class="product"><img src="IMG_20240711_160712_844.jpg" alt="Hat"><h3>Hat</h3></div>
-        <div class="product"><img src="IMG_20240711_160712_890.jpg" alt="Hat"><h3>Hat</h3></div>
-    </section>
+    <div class="product">
+      <img src="IMG-20260122-WA0014.jpg">
+      <div class="price">1 = 20€ | 2 = 35€</div>
+    </div>
 
-    <section id="customers">
-        <h2 style="text-align:center;">Happy Customers</h2>
-        <div class="customers-scroll">
-            <div class="customer"><img src="IMG_20240711_160712_890.jpg" alt="Happy Customer"></div>
-            <div class="customer"><img src="IMG_20240714_171247_367.jpg" alt="Happy Customer"></div>
-            <div class="customer"><img src="IMG_20240717_140215_259.jpg" alt="Happy Customer"></div>
-            <div class="customer"><img src="IMG_20240718_144342_343.jpg" alt="Happy Customer"></div>
-            <div class="customer"><img src="IMG_20240718_144342_442.jpg" alt="Happy Customer"></div>
-            <div class="customer"><img src="IMG_20240718_144342_501.jpg" alt="Happy Customer"></div>
-            <div class="customer"><img src="IMG_20240721_140552_646.jpg" alt="Happy Customer"></div>
-            <div class="customer"><img src="IMG_20240721_140552_714.jpg" alt="Happy Customer"></div>
-            <div class="customer"><img src="IMG_20240721_140552_814.jpg" alt="Happy Customer"></div>
-        </div>
-    </section>
+    <div class="product">
+      <img src="IMG_20240711_160116_714.jpg">
+      <div class="price">3 = 48€ | 5 = 75€</div>
+    </div>
 
-    <section id="contact" class="whatsapp">
-        <a href="https://wa.me/393792579444?text=Hi%20Kilino%20Store!%20I%20love%20your%20hats." target="_blank">
-        📲 Chat on WhatsApp
-        </a>
-    </section>
+    <div class="product">
+      <img src="IMG_20240711_160204_212.jpg">
+      <div class="price">1 = 20€</div>
+    </div>
+
+    <div class="product">
+      <img src="IMG_20240711_160712_571.jpg">
+      <div class="price">2 = 35€</div>
+    </div>
+
+    <div class="product">
+      <img src="IMG_20240711_160712_592.jpg">
+      <div class="price">3 = 48€</div>
+    </div>
+
+    <div class="product">
+      <img src="IMG_20240711_160712_622.jpg">
+      <div class="price">5 = 75€</div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Happy Customers</h2>
+  <div class="customers">
+    <img src="IMG_20240714_171247_367.jpg">
+    <img src="IMG_20240717_140215_259.jpg">
+    <img src="IMG_20240718_144342_343.jpg">
+    <img src="IMG_20240718_144342_442.jpg">
+    <img src="IMG_20240718_144342_501.jpg">
+    <img src="IMG_20240721_140552_646.jpg">
+    <img src="IMG_20240721_140552_714.jpg">
+    <img src="IMG_20240721_140552_814.jpg">
+  </div>
+</section>
+
+<div class="whatsapp">
+  <a href="https://wa.me/393792579444" target="_blank">
+    📲 Order on WhatsApp
+  </a>
+</div>
+
 </body>
 </html>
