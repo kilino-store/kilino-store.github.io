@@ -1,64 +1,3 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kilino</title>
-  <style>
-    body { margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background: #f7f7f2; color: #333; }
-    header { background: #0f172a; color: white; padding: 20px 20px; display: flex; align-items: center; justify-content: space-between; }
-    header h1 { margin: 0; font-size: 28px; }
-    nav a { color: #e5e7eb; margin-left: 20px; text-decoration: none; font-weight: bold; }
-    nav a:hover { color: #ffffff; }
-    .logo { display: flex; align-items: center; }
-    .logo img { height: 50px; margin-right: 10px; }
-    section { padding: 50px 20px; max-width: 1200px; margin: auto; }
-    .hero { text-align: center; }
-    .hero h2 { font-size: 32px; margin-bottom: 10px; }
-    .hero p { font-size: 16px; color: #555; }
-    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-    .card { background: white; padding: 15px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); text-align: center; transition: transform 0.3s; }
-    .card:hover { transform: translateY(-3px); }
-    .card img { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; }
-    .card h3 { margin: 12px 0 8px 0; }
-    .card p { margin: 5px 0; font-weight: bold; color: #1f2937; }
-    .card button { background: #25D366; color: white; border: none; padding: 8px 18px; border-radius: 8px; font-size: 14px; cursor: pointer; transition: background 0.3s; margin-top: 8px; }
-    .card button:hover { background: #128C7E; }
-    .contact { background: #0f172a; color: white; text-align: center; padding: 30px 15px; }
-    footer { text-align: center; padding: 15px; background: #020617; color: #94a3b8; }
-  </style>
-</head>
-<body>
-
-<header>
-  <div class="logo">
-    <img src="file_logo_here" alt="Kilino Logo">
-    <h1>Kilino</h1>
-  </div>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#products">Products</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<section id="home" class="hero">
-  <h2>Eco-Friendly Products by Kilino</h2>
-  <p>Premium, sustainable, and stylish products for conscious customers in Europe.</p>
-  <button onclick="window.location='#products'">Shop Now</button>
-</section>
-
-<section id="products">
-  <h2>Our Products</h2>
-  <div class="products">
-
-    <div class="card">
-      <img src=" IMG-20260122-WA0009.jpg alt="Hemp Hat">
-      <h3>Hemp Hat</h3>
-      <p>€15 – Stylish, lightweight, eco-friendly</p>
-      <button onclick="window.open('https://wa.me/393792579444?text=Hi,+I+want+to+order+Hemp+Hat+from+Kilino','_blank')">Order on WhatsApp</button>
-    </div>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -121,6 +60,10 @@
         .product img, .customer img {
             width: 100%;
             border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .product img:hover {
+            transform: scale(1.05);
         }
         .whatsapp {
             text-align: center;
@@ -134,11 +77,25 @@
             text-decoration: none;
             font-weight: bold;
         }
+        /* Scrollable customers section */
+        .customers-scroll {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            padding: 10px;
+        }
+        .customers-scroll::-webkit-scrollbar {
+            height: 8px;
+        }
+        .customers-scroll::-webkit-scrollbar-thumb {
+            background-color: #ccc;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="https://via.placeholder.com/150x80?text=Kilino+Logo" alt="Kilino Store Logo">
+        <img src="IMG-20260122-WA0011.jpg" alt="Kilino Store Logo">
         <h1>Kilino Store</h1>
         <p>Handmade Eco-Friendly Hats</p>
     </header>
@@ -150,122 +107,45 @@
     </nav>
 
     <section class="hero">
-        <img src="https://via.placeholder.com/300x200?text=Featured+Hat" alt="Featured Hat">
+        <img src="IMG-20260122-WA0011.jpg" alt="Featured Hat">
         <h2>Summer Collection Hats</h2>
         <p>Eco-friendly, handmade, and stylish. Perfect for every sunny day!</p>
     </section>
 
     <section id="products" class="products">
-        <div class="product">
-            <img src="https://via.placeholder.com/250?text=Hat+1" alt="Hat 1">
-            <h3>Hat 1</h3>
-            <p>Lightweight and stylish.</p>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/250?text=Hat+2" alt="Hat 2">
-            <h3>Hat 2</h3>
-            <p>Handmade with love.</p>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/250?text=Hat+3" alt="Hat 3">
-            <h3>Hat 3</h3>
-            <p>Eco-friendly and durable.</p>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/250?text=Hat+4" alt="Hat 4">
-            <h3>Hat 4</h3>
-            <p>Perfect for sunny days.</p>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/250?text=Hat+5" alt="Hat 5">
-            <h3>Hat 5</h3>
-            <p>Handcrafted with natural materials.</p>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/250?text=Hat+6" alt="Hat 6">
-            <h3>Hat 6</h3>
-            <p>Stylish, comfortable, and eco-friendly.</p>
-        </div>
+        <!-- All Hat Images -->
+        <div class="product"><img src="IMG-20260122-WA0014.jpg" alt="Hat"><h3>Hat</h3></div>
+        <div class="product"><img src="IMG_20240711_160116_714.jpg" alt="Hat"><h3>Hat</h3></div>
+        <div class="product"><img src="IMG_20240711_160204_212.jpg" alt="Hat"><h3>Hat</h3></div>
+        <div class="product"><img src="IMG_20240711_160712_571.jpg" alt="Hat"><h3>Hat</h3></div>
+        <div class="product"><img src="IMG_20240711_160712_592.jpg" alt="Hat"><h3>Hat</h3></div>
+        <div class="product"><img src="IMG_20240711_160712_622.jpg" alt="Hat"><h3>Hat</h3></div>
+        <div class="product"><img src="IMG_20240711_160712_647.jpg" alt="Hat"><h3>Hat</h3></div>
+        <div class="product"><img src="IMG_20240711_160712_690.jpg" alt="Hat"><h3>Hat</h3></div>
+        <div class="product"><img src="IMG_20240711_160712_747.jpg" alt="Hat"><h3>Hat</h3></div>
+        <div class="product"><img src="IMG_20240711_160712_844.jpg" alt="Hat"><h3>Hat</h3></div>
+        <div class="product"><img src="IMG_20240711_160712_890.jpg" alt="Hat"><h3>Hat</h3></div>
     </section>
 
-    <section id="customers" class="customers">
-        <div class="customer">
-            <img src="https://via.placeholder.com/250?text=Customer+1" alt="Happy Customer 1">
-            <p>"I love my new Kilino hat! So comfy and eco-friendly."</p>
-        </div>
-        <div class="customer">
-            <img src="https://via.placeholder.com/250?text=Customer+2" alt="Happy Customer 2">
-            <p>"Perfect for summer trips. Handmade and gorgeous."</p>
-        </div>
-        <div class="customer">
-            <img src="https://via.placeholder.com/250?text=Customer+3" alt="Happy Customer 3">
-            <p>"Everyone compliments my Kilino hat! Highly recommend."</p>
+    <section id="customers">
+        <h2 style="text-align:center;">Happy Customers</h2>
+        <div class="customers-scroll">
+            <div class="customer"><img src="IMG_20240711_160712_890.jpg" alt="Happy Customer"></div>
+            <div class="customer"><img src="IMG_20240714_171247_367.jpg" alt="Happy Customer"></div>
+            <div class="customer"><img src="IMG_20240717_140215_259.jpg" alt="Happy Customer"></div>
+            <div class="customer"><img src="IMG_20240718_144342_343.jpg" alt="Happy Customer"></div>
+            <div class="customer"><img src="IMG_20240718_144342_442.jpg" alt="Happy Customer"></div>
+            <div class="customer"><img src="IMG_20240718_144342_501.jpg" alt="Happy Customer"></div>
+            <div class="customer"><img src="IMG_20240721_140552_646.jpg" alt="Happy Customer"></div>
+            <div class="customer"><img src="IMG_20240721_140552_714.jpg" alt="Happy Customer"></div>
+            <div class="customer"><img src="IMG_20240721_140552_814.jpg" alt="Happy Customer"></div>
         </div>
     </section>
 
     <section id="contact" class="whatsapp">
-        <a href="https://wa.me/977xxxxxxxxxx" target="_blank">Contact Us on WhatsApp</a>
+        <a href="https://wa.me/393792579444?text=Hi%20Kilino%20Store!%20I%20love%20your%20hats." target="_blank">
+        📲 Chat on WhatsApp
+        </a>
     </section>
-</body>
-</html>
-
-<!--
-    <div class="card">
-      <img src="file_bag_here" alt="Hemp Bag">
-      <h3>Hemp Bag</h3>
-      <p>€25 – Durable and sustainable</p>
-      <but<!--
-onclick="window.open('https://wa.me/393792579444?text=Hi,+I+want+to+order+Hemp+Bag+from+Kilino','_blank')">Order on WhatsApp</button>
-    </div>
--->
-<!--
-
-    <div class="card">
-      <img src="file_wallet_here" alt="Hemp Wallet">
-      <h3>Hemp Wallet</h3>
-      <p>€12 – Compact and natural material</p>
-      <button onclick="window.open('https://wa.me/393792579444?text=Hi,+I+want+to+order+Hemp+Wallet+from+Kilino','_blank')">Order on WhatsApp</button>
-    </div>
--->
-<!--
-
-    <div class="card">
-      <img src="file_moneybelt_here" alt="Money Belt Bag">
-      <h3>Money Belt Bag</h3>
-      <p>€18 – Safe, wearable, eco-friendly</p>
-      <button onclick="window.open('https://wa.me/393792579444?text=Hi,+I+want+to+order+Money+Belt+Bag+from+Kilino','_blank')">Order on WhatsApp</button>
-    </div>
--->
-<!--
-
-    <div class="card">
-      <img src="file_belt_here" alt="Hemp Belt">
-      <h3>Hemp Belt</h3>
-      <p>€12 – Strong, natural hemp</p>
-      <button onclick="window.open('https://wa.me/393792579444?text=Hi,+I+want+to+order+Hemp+Belt+from+Kilino','_blank')">Order on WhatsApp</button>
-    </div>
--->
-<!--
-    <div class="card">
-      <img src="file_beachbag_here" alt="Beach Bag">
-      <h3>Beach Bag</h3>
-      <p>€20 – Perfect for trips, eco-conscious</p>
-      <button onclick="window.open('https://wa.me/393792579444?text=Hi,+I+want+to+order+Beach+Bag+from+Kilino','_blank')">Order on WhatsApp</button>
-    </div>
--->
-
-  </div>
-</section>
-
-<section id="contact" class="contact">
-  <h2>Contact Us</h2>
-  <p>Email: info@kilino.com</p>
-  <p>WhatsApp: +39 379 257 9444</p>
-</section>
-
-<footer>
-  <p>© 2026 Kilino. All rights reserved.</p>
-</footer>
-
 </body>
 </html>
