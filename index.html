@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kilino Store | Handmade Eco Hats</title>
+<title>Kilino Store | Organic Hemp Crafts</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
@@ -19,46 +19,55 @@ body {
 header {
   background: linear-gradient(135deg, #cfa96c, #8a6a3f);
   text-align: center;
-  padding: 50px 20px;
+  padding: 60px 20px;
 }
 
 header img {
-  max-width: 260px;
+  max-width: 280px;
   margin-bottom: 20px;
 }
 
 header h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 46px;
+  font-size: 48px;
   color: #fff;
   margin: 0;
-  letter-spacing: 2px;
 }
 
 header p {
   color: #fdf6e3;
-  font-size: 16px;
-  margin-top: 8px;
+  font-size: 17px;
+  margin-top: 10px;
 }
 
-/* SECTION */
+/* SECTIONS */
 section {
-  padding: 40px 20px;
+  padding: 50px 20px;
 }
 
 h2 {
   text-align: center;
   font-family: 'Playfair Display', serif;
-  font-size: 32px;
-  margin-bottom: 25px;
+  font-size: 34px;
   color: #6b4f2c;
+  margin-bottom: 20px;
+}
+
+/* STORY */
+.story {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.7;
 }
 
 /* PRODUCTS */
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
 }
 
 .product {
@@ -70,16 +79,29 @@ h2 {
 
 .product img {
   width: 100%;
-  display: block;
 }
 
-.price {
-  background: #3f2d19;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
+.product h3 {
+  font-family: 'Playfair Display', serif;
+  margin: 12px;
+  font-size: 20px;
+}
+
+.desc {
   font-size: 14px;
-  font-weight: 600;
+  padding: 0 12px 12px;
+  line-height: 1.6;
+}
+
+/* PRICING */
+.pricing {
+  text-align: center;
+  font-size: 16px;
+  background: #efe7d8;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 500px;
+  margin: 40px auto;
 }
 
 /* CUSTOMERS */
@@ -98,13 +120,13 @@ h2 {
 /* WHATSAPP */
 .whatsapp {
   text-align: center;
-  margin: 50px 0;
+  margin: 60px 0;
 }
 
 .whatsapp a {
   background: #25D366;
-  color: #fff;
-  padding: 15px 35px;
+  color: white;
+  padding: 16px 38px;
   border-radius: 50px;
   text-decoration: none;
   font-size: 18px;
@@ -118,43 +140,58 @@ h2 {
 <header>
   <img src="logo.png" alt="Kilino Store Logo">
   <h1>Kilino Store</h1>
-  <p>Handmade • Eco-Friendly • Ethical Hats</p>
+  <p>Organic Hemp • Handmade • Ethical Crafts</p>
 </header>
 
 <section>
-<h2>Our Hats</h2>
+<h2>Our Material</h2>
+<div class="story">
+Organic hemp fiber is one of the most sustainable natural materials in the world.
+It is breathable, durable, antibacterial, and requires very little water to grow.
+Our products are handmade using traditional techniques, respecting nature and people.
+</div>
+</section>
+
+<section>
+<h2>Hemp Hats Collection</h2>
+
 <div class="products">
 
 <div class="product">
 <img src="IMG-20260122-WA0014.jpg">
-<div class="price">1 = 20€ | 2 = 35€</div>
+<h3>Organic Hemp Summer Hat</h3>
+<p class="desc">
+Handmade from organic hemp fiber.
+Lightweight, breathable, and perfect for everyday wear.
+</p>
 </div>
 
 <div class="product">
 <img src="IMG_20240711_160116_714.jpg">
-<div class="price">3 = 48€ | 5 = 75€</div>
+<h3>Natural Hemp Sun Hat</h3>
+<p class="desc">
+Ethically crafted using natural hemp.
+Comfortable, durable, and eco-friendly.
+</p>
 </div>
 
 <div class="product">
 <img src="IMG_20240711_160204_212.jpg">
-<div class="price">1 = 20€</div>
+<h3>Classic Hemp Hat</h3>
+<p class="desc">
+Minimal design made from pure hemp fiber.
+Ideal for travel and outdoor lifestyle.
+</p>
 </div>
 
-<div class="product">
-<img src="IMG_20240711_160712_571.jpg">
-<div class="price">2 = 35€</div>
 </div>
 
-<div class="product">
-<img src="IMG_20240711_160712_592.jpg">
-<div class="price">3 = 48€</div>
-</div>
-
-<div class="product">
-<img src="IMG_20240711_160712_622.jpg">
-<div class="price">5 = 75€</div>
-</div>
-
+<div class="pricing">
+<strong>Pricing</strong><br><br>
+• 1 hat – 20€<br>
+• 2 hats – 35€<br>
+• 3 hats – 48€<br>
+• 5 hats – 75€
 </div>
 </section>
 
@@ -166,9 +203,6 @@ h2 {
 <img src="IMG_20240718_144342_343.jpg">
 <img src="IMG_20240718_144342_442.jpg">
 <img src="IMG_20240718_144342_501.jpg">
-<img src="IMG_20240721_140552_646.jpg">
-<img src="IMG_20240721_140552_714.jpg">
-<img src="IMG_20240721_140552_814.jpg">
 </div>
 </section>
 
