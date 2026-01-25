@@ -3,11 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Kilino Store | Handmade Eco Hats</title>
 
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
 body {
@@ -19,27 +17,28 @@ body {
 
 /* HEADER */
 header {
-  background: linear-gradient(135deg, #cfa96c, #a07c40);
+  background: linear-gradient(135deg, #cfa96c, #8a6a3f);
   text-align: center;
-  padding: 40px 20px;
+  padding: 50px 20px;
 }
 
 header img {
-  max-width: 200px;
-  margin-bottom: 15px;
+  max-width: 260px;
+  margin-bottom: 20px;
 }
 
 header h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 42px;
-  margin: 10px 0;
+  font-size: 46px;
   color: #fff;
+  margin: 0;
   letter-spacing: 2px;
 }
 
 header p {
   color: #fdf6e3;
   font-size: 16px;
+  margin-top: 8px;
 }
 
 /* SECTION */
@@ -63,16 +62,10 @@ h2 {
 }
 
 .product {
-  position: relative;
   background: #fff;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
-}
-
-.product:hover {
-  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
 .product img {
@@ -80,21 +73,13 @@ h2 {
   display: block;
 }
 
-.price-overlay {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: rgba(63, 45, 25, 0.85);
+.price {
+  background: #3f2d19;
   color: #fff;
+  text-align: center;
   padding: 10px;
   font-size: 14px;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.product:hover .price-overlay {
-  opacity: 1;
+  font-weight: 600;
 }
 
 /* CUSTOMERS */
@@ -102,13 +87,12 @@ h2 {
   display: flex;
   gap: 15px;
   overflow-x: auto;
-  padding-bottom: 10px;
 }
 
 .customers img {
   height: 220px;
   border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
 
 /* WHATSAPP */
@@ -119,17 +103,12 @@ h2 {
 
 .whatsapp a {
   background: #25D366;
-  color: white;
+  color: #fff;
   padding: 15px 35px;
   border-radius: 50px;
   text-decoration: none;
   font-size: 18px;
   font-weight: 600;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-}
-
-.whatsapp a:hover {
-  background: #1ebe5d;
 }
 </style>
 </head>
@@ -148,32 +127,32 @@ h2 {
 
 <div class="product">
 <img src="IMG-20260122-WA0014.jpg">
-<div class="price-overlay">1 = 20€ | 2 = 35€</div>
+<div class="price">1 = 20€ | 2 = 35€</div>
 </div>
 
 <div class="product">
 <img src="IMG_20240711_160116_714.jpg">
-<div class="price-overlay">3 = 48€ | 5 = 75€</div>
+<div class="price">3 = 48€ | 5 = 75€</div>
 </div>
 
 <div class="product">
 <img src="IMG_20240711_160204_212.jpg">
-<div class="price-overlay">1 = 20€</div>
+<div class="price">1 = 20€</div>
 </div>
 
 <div class="product">
 <img src="IMG_20240711_160712_571.jpg">
-<div class="price-overlay">2 = 35€</div>
+<div class="price">2 = 35€</div>
 </div>
 
 <div class="product">
 <img src="IMG_20240711_160712_592.jpg">
-<div class="price-overlay">3 = 48€</div>
+<div class="price">3 = 48€</div>
 </div>
 
 <div class="product">
 <img src="IMG_20240711_160712_622.jpg">
-<div class="price-overlay">5 = 75€</div>
+<div class="price">5 = 75€</div>
 </div>
 
 </div>
