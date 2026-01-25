@@ -1,121 +1,203 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kilino</title>
-  <style>
-    body { margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background: #f7f7f2; color: #333; }
-    header { background: #0f172a; color: white; padding: 20px 20px; display: flex; align-items: center; justify-content: space-between; }
-    header h1 { margin: 0; font-size: 28px; }
-    nav a { color: #e5e7eb; margin-left: 20px; text-decoration: none; font-weight: bold; }
-    nav a:hover { color: #ffffff; }
-    .logo { display: flex; align-items: center; }
-    .logo img { height: 50px; margin-right: 10px; }
-    section { padding: 50px 20px; max-width: 1200px; margin: auto; }
-    .hero { text-align: center; }
-    .hero h2 { font-size: 32px; margin-bottom: 10px; }
-    .hero p { font-size: 16px; color: #555; }
-    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-    .card { background: white; padding: 15px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); text-align: center; transition: transform 0.3s; }
-    .card:hover { transform: translateY(-3px); }
-    .card img { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; }
-    .card h3 { margin: 12px 0 8px 0; }
-    .card p { margin: 5px 0; font-weight: bold; color: #1f2937; }
-    .card button { background: #25D366; color: white; border: none; padding: 8px 18px; border-radius: 8px; font-size: 14px; cursor: pointer; transition: background 0.3s; margin-top: 8px; }
-    .card button:hover { background: #128C7E; }
-    .contact { background: #0f172a; color: white; text-align: center; padding: 30px 15px; }
-    footer { text-align: center; padding: 15px; background: #020617; color: #94a3b8; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kilino Store | Handmade Eco Hats</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #f6f4ef;
+  color: #3b3b3b;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #cfa96c, #a07c40);
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header img {
+  max-width: 200px;
+  margin-bottom: 15px;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  margin: 10px 0;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+header p {
+  color: #fdf6e3;
+  font-size: 16px;
+}
+
+/* SECTION */
+section {
+  padding: 40px 20px;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #6b4f2c;
+}
+
+/* PRODUCTS */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  position: relative;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-6px);
+}
+
+.product img {
+  width: 100%;
+  display: block;
+}
+
+.price-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(63, 45, 25, 0.85);
+  color: #fff;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.product:hover .price-overlay {
+  opacity: 1;
+}
+
+/* CUSTOMERS */
+.customers {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.customers img {
+  height: 220px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* WHATSAPP */
+.whatsapp {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.whatsapp a {
+  background: #25D366;
+  color: white;
+  padding: 15px 35px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.whatsapp a:hover {
+  background: #1ebe5d;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <div class="logo">
-    <img src="logo.png"  alt="Kilino Logo">
-    <h1>Kilino</h1>
-  </div>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#products">Products</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <img src="logo.png" alt="Kilino Store Logo">
+  <h1>Kilino Store</h1>
+  <p>Handmade • Eco-Friendly • Ethical Hats</p>
 </header>
 
-<section id="home" class="hero">
-  <h2>Eco-Friendly Products by Kilino</h2>
-  <p>Premium, sustainable, and stylish products for conscious customers in Europe.</p>
-  <button onclick="window.location='#products'">Shop Now</button>
+<section>
+<h2>Our Hats</h2>
+<div class="products">
+
+<div class="product">
+<img src="IMG-20260122-WA0014.jpg">
+<div class="price-overlay">1 = 20€ | 2 = 35€</div>
+</div>
+
+<div class="product">
+<img src="IMG_20240711_160116_714.jpg">
+<div class="price-overlay">3 = 48€ | 5 = 75€</div>
+</div>
+
+<div class="product">
+<img src="IMG_20240711_160204_212.jpg">
+<div class="price-overlay">1 = 20€</div>
+</div>
+
+<div class="product">
+<img src="IMG_20240711_160712_571.jpg">
+<div class="price-overlay">2 = 35€</div>
+</div>
+
+<div class="product">
+<img src="IMG_20240711_160712_592.jpg">
+<div class="price-overlay">3 = 48€</div>
+</div>
+
+<div class="product">
+<img src="IMG_20240711_160712_622.jpg">
+<div class="price-overlay">5 = 75€</div>
+</div>
+
+</div>
 </section>
 
-<section id="products">
-  <h2>Our Products</h2>
-  <div class="products">
-
-    <div class="card">
-      <img src=" hat.png" alt="Hemp Hat">
-      <h3>Hemp Hat</h3>
-      <p>€15 – Stylish, lightweight, eco-friendly</p>
-      <button onclick="window.open('https://wa.me/393792579444?text=Hi,+I+want+to+order+Hemp+Hat+from+Kilino','_blank')">Order on WhatsApp</button>
-    </div>
-<!--
-    <div class="card">
-      <img src="file_bag_here" alt="Hemp Bag">
-      <h3>Hemp Bag</h3>
-      <p>€25 – Durable and sustainable</p>
-      <but<!--
-onclick="window.open('https://wa.me/393792579444?text=Hi,+I+want+to+order+Hemp+Bag+from+Kilino','_blank')">Order on WhatsApp</button>
-    </div>
--->
-<!--
-
-    <div class="card">
-      <img src="file_wallet_here" alt="Hemp Wallet">
-      <h3>Hemp Wallet</h3>
-      <p>€12 – Compact and natural material</p>
-      <button onclick="window.open('https://wa.me/393792579444?text=Hi,+I+want+to+order+Hemp+Wallet+from+Kilino','_blank')">Order on WhatsApp</button>
-    </div>
--->
-<!--
-
-    <div class="card">
-      <img src="file_moneybelt_here" alt="Money Belt Bag">
-      <h3>Money Belt Bag</h3>
-      <p>€18 – Safe, wearable, eco-friendly</p>
-      <button onclick="window.open('https://wa.me/393792579444?text=Hi,+I+want+to+order+Money+Belt+Bag+from+Kilino','_blank')">Order on WhatsApp</button>
-    </div>
--->
-<!--
-
-    <div class="card">
-      <img src="file_belt_here" alt="Hemp Belt">
-      <h3>Hemp Belt</h3>
-      <p>€12 – Strong, natural hemp</p>
-      <button onclick="window.open('https://wa.me/393792579444?text=Hi,+I+want+to+order+Hemp+Belt+from+Kilino','_blank')">Order on WhatsApp</button>
-    </div>
--->
-<!--
-    <div class="card">
-      <img src="file_beachbag_here" alt="Beach Bag">
-      <h3>Beach Bag</h3>
-      <p>€20 – Perfect for trips, eco-conscious</p>
-      <button onclick="window.open('https://wa.me/393792579444?text=Hi,+I+want+to+order+Beach+Bag+from+Kilino','_blank')">Order on WhatsApp</button>
-    </div>
--->
-
-  </div>
+<section>
+<h2>Happy Customers</h2>
+<div class="customers">
+<img src="IMG_20240714_171247_367.jpg">
+<img src="IMG_20240717_140215_259.jpg">
+<img src="IMG_20240718_144342_343.jpg">
+<img src="IMG_20240718_144342_442.jpg">
+<img src="IMG_20240718_144342_501.jpg">
+<img src="IMG_20240721_140552_646.jpg">
+<img src="IMG_20240721_140552_714.jpg">
+<img src="IMG_20240721_140552_814.jpg">
+</div>
 </section>
 
-<section id="contact" class="contact">
-  <h2>Contact Us</h2>
-  <p>Email: info@kilino.com</p>
-  <p>WhatsApp: +39 379 257 9444</p>
-</section>
-
-<footer>
-  <p>© 2026 Kilino. All rights reserved.</p>
-</footer>
+<div class="whatsapp">
+<a href="https://wa.me/393792579444" target="_blank">
+📲 Order on WhatsApp
+</a>
+</div>
 
 </body>
 </html>
