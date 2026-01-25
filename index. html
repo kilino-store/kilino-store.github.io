@@ -121,32 +121,32 @@
   <div class="products">
 
     <div class="product">
-      <img src="IMG-20260122-WA0014.jpg">
+      <img src="IMG/IMG-20260122-WA0014.jpg">
       <div class="price">1 = 20€ | 2 = 35€</div>
     </div>
 
     <div class="product">
-      <img src="IMG_20240711_160116_714.jpg">
+      <img src="IMG/IMG_20240711_160116_714.jpg">
       <div class="price">3 = 48€ | 5 = 75€</div>
     </div>
 
     <div class="product">
-      <img src="IMG_20240711_160204_212.jpg">
+      <img src="IMG/IMG_20240711_160204_212.jpg">
       <div class="price">1 = 20€</div>
     </div>
 
     <div class="product">
-      <img src="IMG_20240711_160712_571.jpg">
+      <img src="IMG/IMG_20240711_160712_571.jpg">
       <div class="price">2 = 35€</div>
     </div>
 
     <div class="product">
-      <img src="IMG_20240711_160712_592.jpg">
+      <img src="IMG/IMG_20240711_160712_592.jpg">
       <div class="price">3 = 48€</div>
     </div>
 
     <div class="product">
-      <img src="IMG_20240711_160712_622.jpg">
+      <img src="IMG/IMG_20240711_160712_622.jpg">
       <div class="price">5 = 75€</div>
     </div>
 
@@ -156,14 +156,14 @@
 <section>
   <h2>Happy Customers</h2>
   <div class="customers">
-    <img src="IMG_20240714_171247_367.jpg">
-    <img src="IMG_20240717_140215_259.jpg">
-    <img src="IMG_20240718_144342_343.jpg">
-    <img src="IMG_20240718_144342_442.jpg">
-    <img src="IMG_20240718_144342_501.jpg">
-    <img src="IMG_20240721_140552_646.jpg">
-    <img src="IMG_20240721_140552_714.jpg">
-    <img src="IMG_20240721_140552_814.jpg">
+    <img src="IMG/IMG_20240714_171247_367.jpg">
+    <img src="IMG/IMG_20240717_140215_259.jpg">
+    <img src="IMG/IMG_20240718_144342_343.jpg">
+    <img src="IMG/IMG_20240718_144342_442.jpg">
+    <img src="IMG/IMG_20240718_144342_501.jpg">
+    <img src="IMG/IMG_20240721_140552_646.jpg">
+    <img src="IMG/IMG_20240721_140552_714.jpg">
+    <img src="IMG/IMG_20240721_140552_814.jpg">
   </div>
 </section>
 
