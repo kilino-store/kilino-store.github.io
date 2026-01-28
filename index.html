@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Kilino Store | Handmade Organic Hemp Hats & Crafts</title>
   <meta name="description" content="Kilino Store offers handmade organic hemp hats and eco-friendly crafts, ethically made with love and sustainability.">
 
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
   <style>
+    /* BODY & BASE */
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
@@ -21,47 +21,68 @@
       line-height: 1.6;
     }
 
+    /* HEADER */
     header {
-      background: linear-gradient(135deg, #cfa96c, #8a6a3f);
       text-align: center;
-      padding: 60px 20px;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #cfa96c, #8a6a3f);
     }
 
     header img {
-      max-width: 260px;
-      margin-bottom: 20px;
+      max-width: 220px;
+      margin-bottom: 25px;
     }
 
     header h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 44px;
+      font-size: 52px;
       color: #fff;
-      margin: 0;
+      margin: 0 0 15px 0;
+      letter-spacing: 1px;
     }
 
     header p {
+      font-size: 18px;
       color: #fdf6e3;
-      font-size: 16px;
-      margin-top: 10px;
+      margin: 0;
+      line-height: 1.5;
     }
 
-    section {
+    header p span {
+      font-size: 15px;
+      opacity: 0.9;
+    }
+
+    /* WhatsApp Button */
+    .whatsapp {
+      margin-top: 40px;
+    }
+
+    .whatsapp a {
+      background: #25D366;
+      color: #fff;
+      padding: 16px 38px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+
+    .whatsapp a:hover {
+      background: #1ebe57;
+      transform: scale(1.05);
+    }
+
+    .whatsapp a:active {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transform: scale(1.03);
+    }
+
+    /* PRODUCTS SECTION PLACEHOLDER */
+    section#products {
       padding: 50px 20px;
-    }
-
-    h2 {
-      text-align: center;
-      font-family: 'Playfair Display', serif;
-      font-size: 32px;
-      color: #6b4f2c;
-      margin-bottom: 20px;
-    }
-
-    .story {
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-      font-size: 16px;
     }
 
     .products {
@@ -76,11 +97,12 @@
       border-radius: 15px;
       overflow: hidden;
       box-shadow: 0 8px 18px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
+      transition: all 0.3s ease;
     }
 
     .product:hover {
       transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
     }
 
     .product img {
@@ -94,149 +116,50 @@
       font-size: 20px;
     }
 
-    .desc {
+    .product .desc {
       font-size: 14px;
       padding: 0 12px 14px;
     }
 
-    .pricing {
+    .product .pricing {
       text-align: center;
       font-size: 16px;
       background: #efe7d8;
-      padding: 25px;
+      padding: 20px;
       border-radius: 15px;
-      max-width: 520px;
-      margin: 40px auto;
+      margin: 10px;
     }
-
-    .customers {
-      display: flex;
-      gap: 15px;
-      overflow-x: auto;
-      padding-bottom: 10px;
-    }
-
-    .customers img {
-      height: 220px;
-      border-radius: 15px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-    }
-
-    .whatsapp {
-      text-align: center;
-      margin: 60px 0;
-    }
-.whatsapp a:hover {
-  background: #1ebe57;  /* slightly darker green */
-  transform: scale(1.05);
-  transition: all 0.3s ease;
-}
   </style>
 </head>
 
 <body>
-<header style="text-align:center; padding:80px 20px; background: linear-gradient(135deg, #cfa96c, #8a6a3f);">
-  <img src="logo.png" alt="Kilino handmade organic hemp logo" style="max-width:220px; margin-bottom:25px;">
 
-  <h1 style="font-family:'Playfair Display', serif; font-size:52px; color:#fff; margin:0 0 15px 0; letter-spacing:1px;">
-    Kilino
-  </h1>
+  <!-- HEADER -->
+  <header>
+    <img src="logo.png" alt="Kilino handmade organic hemp logo">
+    <h1>Kilino</h1>
+    <p>
+      Handmade organic hemp hats & crafts<br>
+      <span>Ethically crafted • Sustainable • Made with care</span>
+    </p>
+    <div class="whatsapp">
+      <a href="https://wa.me/393792579444">Order on WhatsApp</a>
+    </div>
+  </header>
 
-  <p style="font-size:18px; color:#fdf6e3; margin:0; line-height:1.5;">
-    Handmade organic hemp hats & crafts<br>
-    <span style="font-size:15px; opacity:0.9;">
-      Ethically crafted • Sustainable • Made with care
-    </span>
-  </p>
-
-  <div class="whatsapp" style="margin-top:40px;">
-    <a href="https://wa.me/393792579444">
-      Order on WhatsApp
-    </a>
-  </div>
-</header>
-
-
-<section>
-<h2>Our Material</h2>
-<div class="story">
-Organic hemp fiber is one of the most sustainable natural materials in the world.
-It is breathable, durable, antibacterial, and requires very little water to grow.
-All our hemp products are handmade using traditional techniques, respecting nature and people.
-</div>
-</section>
-
-<section>
-<h2>Hemp Hats Collection</h2>
-
-<div class="products">
-
-<div class="product">
-<img src="IMG-20260122-WA0014.jpg">
-<h3>Organic Hemp Summer Hat</h3>
-<p class="desc">
-Handmade from organic hemp fiber.
-Lightweight, breathable, and ideal for warm climates.
-</p>
-</div>
-
-<div class="product">
-<img src="IMG_20240711_160116_714.jpg">
-<h3>Natural Hemp Sun Hat</h3>
-<p class="desc">
-Ethically crafted using pure hemp.
-Provides comfort and natural sun protection.
-</p>
-</div>
-
-<div class="product">
-<img src="IMG_20240711_160712_571.jpg">
-<h3>Classic Hemp Travel Hat</h3>
-<p class="desc">
-Durable and fold-friendly hemp hat.
-Perfect for travel and outdoor lifestyle.
-</p>
-</div>
-
-<div class="product">
-<img src="IMG_20240711_160712_592.jpg">
-<h3>Handwoven Hemp Hat</h3>
-<p class="desc">
-Handwoven using traditional techniques.
-Strong, breathable, and timeless in design.
-</p>
-</div>
-
-</div>
-
-<div class="pricing">
-<strong>Pricing</strong><br><br>
-• 1 hat – 20€<br>
-• 2 hats – 35€<br>
-• 3 hats – 48€<br>
-• 5 hats – 75€
-</div>
-</section>
-
-<section>
-<h2>Happy Customers</h2>
-<div class="customers">
-<img src="IMG_20240714_171247_367.jpg">
-<img src="IMG_20240717_140215_259.jpg">
-<img src="IMG_20240718_144342_343.jpg">
-<img src="IMG_20240718_144342_442.jpg">
-<img src="IMG_20240718_144342_501.jpg">
-<img src="IMG_20240721_140552_646.jpg">
-<img src="IMG_20240721_140552_714.jpg">
-<img src="IMG_20240721_140552_814.jpg">
-</div>
-</section>
-
-<div class="whatsapp">
-<a href="https://wa.me/393792579444" target="_blank">
-📲 Order on WhatsApp
-</a>
-</div>
+  <!-- PRODUCTS SECTION (PLACEHOLDER) -->
+  <section id="products">
+    <h2 style="text-align:center; font-family:'Playfair Display', serif; font-size:32px; color:#6b4f2c;">Our Products</h2>
+    <div class="products">
+      <!-- Example product, repeat for each hat -->
+      <div class="product">
+        <img src="hat1.jpg" alt="Handmade organic hemp hat - Kilino">
+        <h3>Eco Hemp Hat</h3>
+        <p class="desc">Stylish handmade hemp hat, crafted sustainably. Perfect for sunny days and casual outings.</p>
+        <div class="pricing">$25</div>
+      </div>
+    </div>
+  </section>
 
 </body>
 </html>
