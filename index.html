@@ -3,59 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kilino Store | Handmade Organic Hemp Hats & Crafts</title>
-  <meta name="description" content="Kilino Store offers handmade organic hemp hats and eco-friendly crafts, ethically made with love and sustainability.">
+  <title>Kilino Store | Handmade Organic Hemp Hats</title>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
   <style>
-    /* BODY */
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
       background: #f6f4ef;
       color: #3b3b3b;
-      line-height: 1.6;
     }
 
     /* HEADER */
     header {
       text-align: center;
-      padding: 80px 20px;
+      padding: 70px 20px;
       background: linear-gradient(135deg, #cfa96c, #8a6a3f);
     }
 
     header img {
       max-width: 220px;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
     }
 
     header h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 52px;
+      font-size: 48px;
       color: #fff;
-      margin: 0 0 15px 0;
-      letter-spacing: 1px;
+      margin: 0;
     }
 
     header p {
-      font-size: 18px;
       color: #fdf6e3;
-      margin: 0;
-      line-height: 1.5;
+      font-size: 17px;
+      margin-top: 10px;
     }
 
-    header p span {
-      font-size: 15px;
-      opacity: 0.9;
-    }
-
-    /* WhatsApp Button */
+    /* WHATSAPP BUTTON */
     .whatsapp {
-      margin-top: 40px;
+      text-align: center;
+      margin-top: 35px;
     }
 
     .whatsapp a {
@@ -75,25 +64,21 @@
       transform: scale(1.05);
     }
 
-    .whatsapp a:active {
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      transform: scale(1.03);
-    }
-
-    /* STORY / PRODUCT DESCRIPTION */
-    section#story {
+    /* SECTIONS */
+    section {
       padding: 50px 20px;
     }
 
-    section#story h2 {
+    h2 {
       text-align: center;
       font-family: 'Playfair Display', serif;
       font-size: 32px;
       color: #6b4f2c;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
 
-    section#story p {
+    /* STORY */
+    .story {
       max-width: 900px;
       margin: auto;
       text-align: center;
@@ -101,76 +86,35 @@
       line-height: 1.7;
     }
 
-    /* PRODUCTS */
-    section#products {
-      padding: 50px 20px;
-    }
-
-    section#products h2 {
-      text-align: center;
-      font-family: 'Playfair Display', serif;
-      font-size: 32px;
-      color: #6b4f2c;
-      margin-bottom: 30px;
-    }
-
-    .products {
+    /* HATS GALLERY */
+    .hats {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 25px;
+      max-width: 1100px;
+      margin: auto;
     }
 
-    .product {
-      background: #fff;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 8px 18px rgba(0,0,0,0.1);
-      transition: all 0.3s ease;
-    }
-
-    .product:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
-    }
-
-    .product img {
+    .hats img {
       width: 100%;
-      display: block;
-    }
-
-    .product h3 {
-      font-family: 'Playfair Display', serif;
-      margin: 12px;
-      font-size: 20px;
-    }
-
-    .product .desc {
-      font-size: 14px;
-      padding: 0 12px 14px;
-    }
-
-    .product .pricing {
-      text-align: center;
-      font-size: 16px;
-      background: #efe7d8;
-      padding: 20px;
       border-radius: 15px;
-      margin: 10px;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    }
+
+    /* PRICING */
+    .pricing {
+      max-width: 500px;
+      margin: auto;
+      background: #efe7d8;
+      border-radius: 18px;
+      padding: 30px;
+      text-align: center;
+      font-size: 17px;
+      line-height: 2;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.12);
     }
 
     /* CUSTOMERS */
-    section#customers {
-      padding: 50px 20px;
-    }
-
-    section#customers h2 {
-      text-align: center;
-      font-family: 'Playfair Display', serif;
-      font-size: 32px;
-      color: #6b4f2c;
-      margin-bottom: 30px;
-    }
-
     .customers {
       display: flex;
       gap: 15px;
@@ -179,9 +123,10 @@
     }
 
     .customers img {
-      height: 200px;
+      height: 210px;
       border-radius: 15px;
       box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      flex-shrink: 0;
     }
   </style>
 </head>
@@ -190,73 +135,64 @@
 
   <!-- HEADER -->
   <header>
-    <img src="logo.png" alt="Kilino handmade organic hemp logo">
+    <img src="logo.png" alt="Kilino Logo">
     <h1>Kilino</h1>
-    <p>
-      Handmade organic hemp hats & crafts<br>
-      <span>Ethically crafted • Sustainable • Made with care</span>
-    </p>
+    <p>Handmade Organic Hemp Hats • Ethical • Sustainable</p>
+
     <div class="whatsapp">
       <a href="https://wa.me/393792579444">Order on WhatsApp</a>
     </div>
   </header>
 
-  <!-- PRODUCT STORY -->
-  <section id="story">
+  <!-- STORY -->
+  <section>
     <h2>Our Story</h2>
-    <p>
-      Kilino Store brings you eco-friendly, handmade hemp products crafted with love. Every hat is made ethically and sustainably, perfect for those who care about style and the planet.
+    <p class="story">
+      Kilino creates handmade organic hemp hats crafted with care, tradition, and sustainability.
+      Every piece supports ethical production and conscious living.
     </p>
   </section>
 
-  <!-- PRODUCTS -->
-  <section id="products">
+  <!-- HATS -->
+  <section>
     <h2>Our Hats</h2>
-    <div class="products">
-      <div class="product">
-        <img src="IMG-20260122-WA0010.jpg" alt="Handmade organic hemp hat - Kilino">
-        <h3>Eco Hemp Hat</h3>
-        <p class="desc">Stylish handmade hemp hat, crafted sustainably. Perfect for sunny days and casual outings.</p>
-        <div class="pricing">$25</div>
-      </div>
-      <div class="product">
-        <img src="IMG-20260122-WA0011.jpg" alt="Handmade organic hemp hat - Kilino">
-        <h3>Natural Hemp Cap</h3>
-        <p class="desc">Comfortable and eco-friendly cap, handmade with sustainable hemp fibers.</p>
-        <div class="pricing">$28</div>
-      </div>
-      <div class="product">
-        <img src="IMG-20260122-WA0012.jpg" alt="Handmade organic hemp hat - Kilino">
-        <h3>Summer Hemp Hat</h3>
-        <p class="desc">Lightweight hat ideal for summer, made with breathable hemp material.</p>
-        <div class="pricing">$30</div>
-      </div>
-      <div class="product">
-        <img src="IMG-20260122-WA0013.jpg" alt="Handmade organic hemp hat - Kilino">
-        <h3>Classic Hemp Fedora</h3>
-        <p class="desc">Elegant handmade fedora crafted from organic hemp, perfect for casual or formal style.</p>
-        <div class="pricing">$35</div>
-      </div>
+    <div class="hats">
+      <img src="IMG-20260122-WA0009.jpg">
+      <img src="IMG-20260122-WA0014.jpg">
+      <img src="IMG_20240711_160712_571.jpg">
+      <img src="IMG_20240711_160712_622.jpg">
+      <img src="IMG_20240711_160712_844.jpg">
     </div>
   </section>
 
-  <!-- HAPPY CUSTOMERS -->
-  <section id="customers">
+  <!-- PRICING -->
+  <section>
+    <h2>Pricing</h2>
+    <div class="pricing">
+      1 Hat = 20<br>
+      2 Hats = 35<br>
+      3 Hats = 48<br>
+      5 Hats = 75
+    </div>
+  </section>
+
+  <!-- CUSTOMERS -->
+  <section>
     <h2>Happy Customers</h2>
     <div class="customers">
-      <img src="IMG-20260122-WA0020.jpg" alt="Happy customer wearing Kilino hat">
-      <img src="IMG-20260122-WA0021.jpg" alt="Happy customer wearing Kilino hat">
-      <img src="IMG-20260122-WA0022.jpg" alt="Happy customer wearing Kilino hat">
-      <img src="IMG-20260122-WA0023.jpg" alt="Happy customer wearing Kilino hat">
-      <img src="IMG-20260122-WA0024.jpg" alt="Happy customer wearing Kilino hat">
-      <img src="IMG-20260122-WA0025.jpg" alt="Happy customer wearing Kilino hat">
-      <img src="IMG-20260122-WA0026.jpg" alt="Happy customer wearing Kilino hat">
-      <img src="IMG-20260122-WA0027.jpg" alt="Happy customer wearing Kilino hat">
+      <img src="IMG_20240714_171247_227.jpg">
+      <img src="IMG_20240714_171247_367.jpg">
+      <img src="IMG_20240717_140215_259.jpg">
+      <img src="IMG_20240718_144342_343.jpg">
+      <img src="IMG_20240718_144342_558.jpg">
+      <img src="IMG_20240721_140552_846.jpg">
+      <img src="IMG_20240803_112230.jpg">
+      <img src="IMG_20240803_113103.jpg">
     </div>
   </section>
 
-  <!-- BOTTOM WHATSAPP BUTTON -->
-  <section class="whatsapp" style="text-align:center; margin:50px 0;">
+  <!-- BOTTOM WHATSAPP -->
+  <section class="whatsapp">
     <a href="https://wa.me/393792579444">Order on WhatsApp</a>
   </section>
 
