@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
   <style>
-    /* BODY & BASE */
+    /* BODY */
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
@@ -80,16 +80,23 @@
       transform: scale(1.03);
     }
 
-    /* PRODUCTS SECTION PLACEHOLDER */
+    /* PRODUCT SECTION */
     section#products {
       padding: 50px 20px;
+    }
+
+    section#products h2 {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      color: #6b4f2c;
+      margin-bottom: 30px;
     }
 
     .products {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 25px;
-      margin-top: 30px;
     }
 
     .product {
@@ -129,6 +136,37 @@
       border-radius: 15px;
       margin: 10px;
     }
+
+    /* CUSTOMERS SECTION */
+    section#customers {
+      padding: 50px 20px;
+    }
+
+    section#customers h2 {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      color: #6b4f2c;
+      margin-bottom: 30px;
+    }
+
+    .customers {
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+      padding-bottom: 10px;
+    }
+
+    .customers img {
+      height: 200px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    /* GENERAL */
+    h2, h3 {
+      margin: 0;
+    }
   </style>
 </head>
 
@@ -147,19 +185,34 @@
     </div>
   </header>
 
-  <!-- PRODUCTS SECTION (PLACEHOLDER) -->
+  <!-- PRODUCT DESCRIPTION / STORY -->
+  <section id="story">
+    <h2 style="text-align:center; font-family:'Playfair Display', serif; font-size:32px; color:#6b4f2c;">Our Story</h2>
+    <p style="max-width:900px; margin:auto; text-align:center; font-size:16px; line-height:1.7;">
+      Kilino Store brings you eco-friendly, handmade hemp products crafted with love. Every hat is made ethically and sustainably, perfect for those who care about style and the planet.
+    </p>
+  </section>
+
+  <!-- PRODUCTS -->
   <section id="products">
-    <h2 style="text-align:center; font-family:'Playfair Display', serif; font-size:32px; color:#6b4f2c;">Our Products</h2>
+    <h2>Our Hats</h2>
     <div class="products">
-      <!-- Example product, repeat for each hat -->
       <div class="product">
         <img src="hat1.jpg" alt="Handmade organic hemp hat - Kilino">
         <h3>Eco Hemp Hat</h3>
         <p class="desc">Stylish handmade hemp hat, crafted sustainably. Perfect for sunny days and casual outings.</p>
         <div class="pricing">$25</div>
       </div>
-    </div>
-  </section>
-
-</body>
-</html>
+      <div class="product">
+        <img src="hat2.jpg" alt="Handmade organic hemp hat - Kilino">
+        <h3>Natural Hemp Cap</h3>
+        <p class="desc">Comfortable and eco-friendly cap, handmade with sustainable hemp fibers.</p>
+        <div class="pricing">$28</div>
+      </div>
+      <div class="product">
+        <img src="hat3.jpg" alt="Handmade organic hemp hat - Kilino">
+        <h3>Summer Hemp Hat</h3>
+        <p class="desc">Lightweight hat ideal for summer, made with breathable hemp material.</p>
+        <div class="pricing">$30</div>
+      </div>
+      <div
