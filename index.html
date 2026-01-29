@@ -1,179 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google verification -->
   <meta name="google-site-verification" content="lFb2ElHx2Pc-md9hlGXSlsXNLyaZh2EFUr2rM6eYmQw" /> 
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kilino Store | Handmade Organic Hemp Hats</title>
   <meta http-equiv="content-language" content="en">
   <meta name="geo.region" content="EU">
   <meta name="description" content="Kilino Store – handmade organic hemp hats crafted ethically in small batches. Sustainable slow fashion for conscious buyers across Europe.">
+
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <style>
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: #f6f4ef;
-      color: #3b3b3b;
-    }
+    body { margin:0; font-family:'Montserrat',sans-serif; background:#f6f4ef; color:#3b3b3b; }
 
-    /* HEADER */
-    header {
-      text-align: center;
-      padding: 70px 20px;
-      background: linear-gradient(135deg, #cfa96c, #8a6a3f);
-    }
+    header { text-align:center; padding:70px 20px; background: linear-gradient(135deg, #cfa96c, #8a6a3f); }
+    header img { max-width:220px; margin-bottom:20px; }
+    header h1 { font-family:'Playfair Display', serif; font-size:48px; color:#fff; margin:0; }
+    header p { color:#fdf6e3; font-size:17px; margin-top:10px; }
 
-    header img {
-      max-width: 220px;
-      margin-bottom: 20px;
-    }
+    .whatsapp { text-align:center; margin-top:35px; }
+    .whatsapp a { background:#25D366; color:#fff; padding:16px 38px; border-radius:50px; text-decoration:none; font-size:18px; font-weight:600; display:inline-block; transition:all 0.3s ease; }
+    .whatsapp a:hover { background:#1ebe57; transform:scale(1.05); }
 
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 48px;
-      color: #fff;
-      margin: 0;
-    }
+    section { padding:60px 20px; }
+    h2 { text-align:center; font-family:'Playfair Display', serif; font-size:32px; color:#6b4f2c; margin-bottom:25px; }
+    .story { max-width:900px; margin:auto; text-align:center; font-size:16px; line-height:1.7; }
 
-    header p {
-      color: #fdf6e3;
-      font-size: 17px;
-      margin-top: 10px;
-    }
+    .hats { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:25px; max-width:1100px; margin:auto; }
+    .hats img { width:100%; border-radius:15px; box-shadow:0 8px 18px rgba(0,0,0,0.12); transition: transform 0.3s ease; }
+    .hats img:hover { transform: scale(1.03); }
 
-    /* WHATSAPP BUTTON */
-    .whatsapp {
-      text-align: center;
-      margin-top: 35px;
-    }
+    .pricing { max-width:500px; margin:auto; background:#efe7d8; border-radius:18px; padding:30px; text-align:center; font-size:17px; line-height:2; box-shadow:0 6px 15px rgba(0,0,0,0.12); }
 
-    .whatsapp a {
-      background: #25D366;
-      color: #fff;
-      padding: 16px 38px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: 600;
-      display: inline-block;
-      transition: all 0.3s ease;
-    }
+    .customers { display:flex; gap:15px; overflow-x:auto; padding-bottom:10px; }
+    .customers img { height:210px; border-radius:15px; box-shadow:0 6px 15px rgba(0,0,0,0.2); flex-shrink:0; transition: transform 0.3s ease; }
+    .customers img:hover { transform: scale(1.03); }
 
-    .whatsapp a:hover {
-      background: #1ebe57;
-      transform: scale(1.05);
-    }
-
-    /* SECTIONS */
-    section {
-      padding: 50px 20px;
-    }
-
-    h2 {
-      text-align: center;
-      font-family: 'Playfair Display', serif;
-      font-size: 32px;
-      color: #6b4f2c;
-      margin-bottom: 25px;
-    }
-
-    /* STORY */
-    .story {
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-      font-size: 16px;
-      line-height: 1.7;
-    }
-
-    /* HATS GALLERY */
-    .hats {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 25px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .hats img {
-      width: 100%;
-      border-radius: 15px;
-      box-shadow: 0 8px 18px rgba(0,0,0,0.12);
-    }
-
-    /* PRICING */
-    .pricing {
-      max-width: 500px;
-      margin: auto;
-      background: #efe7d8;
-      border-radius: 18px;
-      padding: 30px;
-      text-align: center;
-      font-size: 17px;
-      line-height: 2;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.12);
-    }
-
-    /* CUSTOMERS */
-    .customers {
-      display: flex;
-      gap: 15px;
-      overflow-x: auto;
-      padding-bottom: 10px;
-    }
-
-    .customers img {
-      height: 210px;
-      border-radius: 15px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-      flex-shrink: 0;
-    }
-  /* INSTAGRAM BUTTON */
-.instagram-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 14px 32px;
-  border-radius: 40px;
-  background: #E1306C;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.instagram-button:hover {
-  transform: scale(1.05);
-  opacity: 0.85;
-}
-
-.instagram-button svg {
-  width: 20px;
-  height: 20px;
-}
-/* DAY 5 POLISHING */
-
-/* Better spacing */
-section {
-  padding: 60px 20px;
-}
-
-/* Image hover lift */
-.hats img,
-.customers img {
-  transition: transform 0.3s ease;
-}
-
-.hats img:hover,
-.customers img:hover {
-  transform: scale(1.03);
-}
-
+    .instagram-button { display:inline-flex; align-items:center; gap:10px; padding:14px 32px; border-radius:40px; background:#E1306C; color:#fff; text-decoration:none; font-weight:600; transition:all 0.3s ease; }
+    .instagram-button:hover { transform: scale(1.05); opacity:0.85; }
+    .instagram-button svg { width:20px; height:20px; }
   </style>
 </head>
-
 <body>
 
   <!-- HEADER -->
@@ -181,7 +53,6 @@ section {
     <img src="logo.png" alt="Kilino Logo">
     <h1>Kilino</h1>
     <p>Handmade Organic Hemp Hats • Ethical • Sustainable</p>
-
     <div class="whatsapp">
       <a href="https://wa.me/393792579444">Order on WhatsApp</a>
     </div>
@@ -200,11 +71,11 @@ section {
   <section>
     <h2>Our Hats</h2>
     <div class="hats">
-      <img src="IMG-20260122-WA0009.jpg">
-      <img src="IMG-20260122-WA0014.jpg">
-      <img src="IMG_20240711_160712_571.jpg">
-      <img src="IMG_20240711_160712_622.jpg">
-      <img src="IMG_20240711_160712_844.jpg">
+      <img src="beige-hemp-hat.jpg" alt="Handmade organic hemp hat in natural beige color">
+      <img src="brown-hemp-hat.jpg" alt="Handmade organic hemp hat in earthy brown color">
+      <img src="black-hemp-hat.jpg" alt="Handmade organic hemp hat in classic black">
+      <img src="grey-hemp-hat.jpg" alt="Handmade organic hemp hat in light grey color">
+      <img src="green-hemp-hat.jpg" alt="Handmade organic hemp hat in subtle green shade">
     </div>
   </section>
 
@@ -212,48 +83,57 @@ section {
   <section>
     <h2>Pricing</h2>
     <div class="pricing">
-  1 Hat = €20<br>
-  2 Hats = €35<br>
-  3 Hats = €48<br>
-  5 Hats = €75
-</div>
-
+      1 Hat = €20<br>
+      2 Hats = €35<br>
+      3 Hats = €48<br>
+      5 Hats = €75
+    </div>
   </section>
 
   <!-- CUSTOMERS -->
   <section>
     <h2>Happy Customers</h2>
     <div class="customers">
-      <img src="IMG_20240714_171247_227.jpg">
-      <img src="IMG_20240714_171247_367.jpg">
-      <img src="IMG_20240717_140215_259.jpg">
-      <img src="IMG_20240718_144342_343.jpg">
-      <img src="IMG_20240718_144342_558.jpg">
-      <img src="IMG_20240721_140552_846.jpg">
-      <img src="IMG_20240803_112230.jpg">
-      <img src="IMG_20240803_113103.jpg">
+      <img src="customer-hat-1.jpg" alt="Customer wearing handmade beige hemp hat">
+      <img src="customer-hat-2.jpg" alt="Customer wearing brown hemp hat smiling outdoors">
+      <img src="customer-hat-3.jpg" alt="Customer showing off black hemp hat">
+      <img src="customer-hat-4.jpg" alt="Customer wearing light grey hemp hat">
+      <img src="customer-hat-5.jpg" alt="Customer posing with green hemp hat">
+      <img src="customer-hat-6.jpg" alt="Customer enjoying summer in handmade hemp hat">
+      <img src="customer-hat-7.jpg" alt="Customer wearing eco-friendly hemp hat">
+      <img src="customer-hat-8.jpg" alt="Customer smiling with handmade hemp hat">
     </div>
   </section>
 
-  <section>
-  <h2>Follow Our Journey</h2>
-  <p style="text-align:center; font-size:15px; opacity:0.85;">
-    Daily life, handmade process & real customers
-  </p>
-
-  <div style="text-align:center; margin-top:25px;">
-    <a href="https://www.instagram.com/soulhemp2024/" target="_blank" class="instagram-button">
-  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24">
-    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.97.24 2.428.403a4.92 4.92 0 0 1 1.788 1.037 4.924 4.924 0 0 1 1.037 1.788c.163.458.349 1.258.403 2.428.058 1.266.07 1.645.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.403 2.428a4.927 4.927 0 0 1-1.037 1.788 4.923 4.923 0 0 1-1.788 1.037c-.458.163-1.258.349-2.428.403-1.266.058-1.645.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.428-.403a4.924 4.924 0 0 1-1.788-1.037 4.927 4.927 0 0 1-1.037-1.788c-.163-.458-.349-1.258-.403-2.428-.058-1.266-.07-1.645-.07-4.85s.012-3.584.07-4.85c.054-1.17.24-1.97.403-2.428a4.924 4.924 0 0 1 1.037-1.788A4.924 4.924 0 0 1 4.722 2.636c.458-.163 1.258-.349 2.428-.403C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.014 7.052.072 5.775.13 4.82.308 4.043.56c-.84.28-1.554.652-2.268 1.366C1.963 2.64 1.591 3.354 1.311 4.194c-.252.777-.43 1.732-.488 3.009C.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.058 1.277.236 2.232.488 3.009.28.84.652 1.554 1.366 2.268.714.714 1.428 1.086 2.268 1.366.777.252 1.732.43 3.009.488C8.332 23.986 8.741 24 12 24s3.668-.014 4.948-.072c1.277-.058 2.232-.236 3.009-.488a5.963 5.963 0 0 0 2.268-1.366 5.963 5.963 0 0 0 1.366-2.268c.252-.777.43-1.732.488-3.009C23.986 15.668 24 15.259 24 12s-.014-3.668-.072-4.948c-.058-1.277-.236-2.232-.488-3.009a5.963 5.963 0 0 0-1.366-2.268 5.963 5.963 0 0 0-2.268-1.366c-.777-.252-1.732-.43-3.009-.488C15.668.014 15.259 0 12 0z"/>
-    <path d="M12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998z"/>
-    <circle cx="18.406" cy="5.594" r="1.44"/>
-  </svg>
-  Follow Kilino on Instagram
-</a>
-  </div>
-</section>
+  <!-- WHATSAPP -->
   <section class="whatsapp">
-    <a href="https://wa.me/393792579444">Order on WhatsApp</a>
+    <h2>Order Your Handmade Hemp Hat</h2>
+    <p style="text-align:center; font-size:16px;">
+      Contact us directly on WhatsApp to place your order for Kilino handmade organic hemp hats.
+    </p>
+    <div style="text-align:center; margin-top:20px;">
+      <a href="https://wa.me/393792579444" title="Order Kilino Handmade Hemp Hats on WhatsApp">
+        Order on WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM -->
+  <section>
+    <h2>Follow Our Journey on Instagram</h2>
+    <p style="text-align:center; font-size:16px;">
+      See behind the scenes of Kilino handmade hemp hats, daily life, and real customer photos on Instagram.
+    </p>
+    <div style="text-align:center; margin-top:20px;">
+      <a href="https://www.instagram.com/soulhemp2024/" target="_blank" class="instagram-button" title="Follow Kilino Handmade Hemp Hats on Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.97.24 2.428.403a4.92 4.92 0 0 1 1.788 1.037 4.924 4.924 0 0 1 1.037 1.788c.163.458.349 1.258.403 2.428.058 1.266.07 1.645.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.403 2.428a4.927 4.927 0 0 1-1.037 1.788 4.923 4.923 0 0 1-1.788 1.037c-.458.163-1.258.349-2.428.403-1.266.058-1.645.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.428-.403a4.924 4.924 0 0 1-1.788-1.037 4.927 4.927 0 0 1-1.037-1.788c-.163-.458-.349-1.258-.403-2.428-.058-1.266-.07-1.645-.07-4.85s.012-3.584.07-4.85c.054-1.17.24-1.97.403-2.428a4.924 4.924 0 0 1 1.037-1.788A4.924 4.924 0 0 1 4.722 2.636c.458-.163 1.258-.349 2.428-.403C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.014 7.052.072 5.775.13 4.82.308 4.043.56c-.84.28-1.554.652-2.268 1.366C1.963 2.64 1.591 3.354 1.311 4.194c-.252.777-.43 1.732-.488 3.009C.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.058 1.277.236 2.232.488 3.009.28.84.652 1.554 1.366 2.268.714.714 1.428 1.086 2.268 1.366.777.252 1.732.43 3.009.488C8.332 23.986 8.741 24 12 24s3.668-.014 4.948-.072c1.277-.058 2.232-.236 3.009-.488a5.963 5.963 0 0 0 2.268-1.366 5.963 5.963 0 0 0 1.366-2.268c.252-.777.43-1.732.488-3.009C23.986 15.668 24 15.259 24 12s-.014-3.668-.072-4.948c-.058-1.277-.236-2.232-.488-3.009a5.963 5.963 0 0 0-1.366-2.268 5.963 5.963 0 0 0-2.268-1.366c-.777-.252-1.732-.43-3.009-.488C15.668.014 15.259 0 12 0z"/>
+          <path d="M12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998z"/>
+          <circle cx="18.406" cy="5.594" r="1.44"/>
+        </svg>
+        Follow Kilino on Instagram
+      </a>
+    </div>
   </section>
 
 </body>
